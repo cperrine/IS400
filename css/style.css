@@ -1,0 +1,10 @@
+body {
+  background-color: #fff;
+}
+nav{
+  background: #333;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  color: #CC5500
+  }

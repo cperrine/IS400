@@ -1,14 +1,158 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <title>IS400</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<section class="nav">
-  <nav>
-    <div class="title">
-      Library
-    </div>
-  </nav>
+  <head>
+    <meta charset="utf-8">
+    <title>IS400</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/global.css">
+   <link rel="stylesheet" href="css/normal.css">
+  </head>
+  <body>
+  <section class="nav">
+    <nav>
+      <div class="title">
+          <h1>PLL Statistics Search</h1>
+      </div>
+    </nav>
+  </section>
+  <center>
+    <h2>Select Search Criteria</h2>
+  </center>
+
+  <form action="/action_page.php">
+    <label for="name">Player Name:</label>
+    <input type="text" id="name" name="name">
+    <input type="checkbox" id="Goals" name="Goals" value="Goals">
+    <label for="Goals"> Goals</label><br><br>
+    <label for="team">Select a Team:</label>
+    <select name="team" id="team">
+      <option value="Archers">Archers</option>
+      <option value="Atlas">Atlas</option>
+      <option value="Cannons">Cannons</option>
+      <option value="Chaos">Chaos</option>
+      <option value="Chrome">Chrome</option>
+      <option value="Redwoods">Redwoods</option>
+      <option value="Waterdogs">Waterdogs</option>
+      <option value="Whipsnakes">Whipsnakes</option>
+      <input type="checkbox" id="Assists" name="Assists" value="Assists">
+      <label for="Assists"> Assists</label>
+    </select><br><br>
+    <label for="playin">Search Games Played By:</label>
+    <input type="text" id="playin" name="playin">
+    <input type="checkbox" id="Faceoffs" name="Faceoffs" value="Faceoffs">
+    <label for="Faceoffs"> Faceoffs</label><br><br>
+    <input type="submit" value="Submit"><br><br>
+  </form>
+    <main class="gallery">
+      <article class="card">
+        <div class="card-img">
+          <img id="myImg1" src="img/Goal.jpg" alt="">
+        </div>
+        <div class="card-content">
+          <h3>The Top 5 Goal Scorers</h3>
+          <button data-modal="#01" class="card-more button">View</button>
+        </div>
+      </article>
+      <div id="01" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="modal-body">
+            <img src="img/Zed.jpg" alt="" />
+            <div class="eg-text">
+              <h3></h3>
+              <p>Zed Williams  31 </p>
+              <p>Josh Byrne  31 </p>
+              <p>Lyle Thompson  31 </p>
+              <p>Jeff Teat  31 </p>
+              <p>Zed Williams  31 </p>
+            </div>
+          </div><!--end .modal-body-->
+        </div><!--end .modal-content-->
+      </div><!--end .modal-->
+      <article class="card">
+        <div class="card-img">
+          <img id="myImg2" src="img/Assist.jpg" alt="" style="width:100%;max-width:300px">
+        </div>
+        <div class="card-content">
+          <h3>The Top 5 Assist Leaders</h3>
+          <button data-modal="#02" class="card-more button">View</button>
+          <div id="02" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="modal-body">
+                <img src="img/Grant.jpg" alt="" />
+                <div class="eg-text">
+                  <h3></h3>
+                  <p>Grant Ament  25</p>
+                  <p>Dhane Smith  24</p>
+                  <p>Grant Ament  25</p>
+                  <p>Grant Ament  25</p>
+                  <p>Grant Ament  25</p>
+                </div>
+            </div>
+          </div>
+        </div><!--end .card-content-->
+      </article><!--end .card-->
+      <article class="card">
+        <div class="card-img">
+          <img id="myImg2" src="img/twopoint.jpg" alt="" style="width:100%;max-width:300px">
+        </div>
+        <div class="card-content">
+          <h3>Top 5 Two Point Goal Scorers</h3>
+          <p></p>
+          <button data-modal="#03" class="card-more button">View</button>
+          <div id="03" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="modal-body">
+                <img src="img/sergio.jpg" alt=""/>
+                <div class="eg-text">
+                  <h3></h3>
+                  <p>Sergio Perkovic  5</p>
+                  <p>Bryan Costabile  4</p>
+                  <p>CJ Costabile  4</p>
+                  <p>Jeff Teat  3</p>
+                  <p>Paul Rabil  3</p>
+                </div>
+            </div>
+          </div>
+        </div><!--end .card-content-->
+      </article><!--end .card-->
+      <article class="card">
+        <div class="card-img">
+          <img id="myImg2" src="img/points.jpg" alt="" style="width:100%;max-width:300px">
+        </div>
+        <div class="card-content">
+          <h3>Top 5 Points Scorers</h3>
+          <p></p>
+          <button data-modal="#04" class="card-more button">View</button>
+          <div id="04" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="modal-body">
+                <img src="img/Zed.jpg" alt=""/>
+                <div class="eg-text">
+                  <h3></h3>
+                  <p>Zed Williams  41</p>
+                  <p>Josh Byrne  40</p>
+                  <p>Grant Ament  39</p>
+                  <p>Lyle Thompson  38</p>
+                  <p>Tom Schrieber  37</p>
+                </div>
+            </div>
+          </div>
+        </div><!--end .card-content-->
+      </article><!--end .card--><!--end .card-->
+    </main>
+    <footer>
+     <center>
+       <img src="img/PLL.jpg" alt="PLL">
+     </center>
+     <p>&copy;2021 Perrine & Geiger</p>
+   </footer>
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+       crossorigin="anonymous"></script>
+   <script type="text/javascript" src="js/page.js"></script>
+    </body>
+</html>

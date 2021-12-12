@@ -12,7 +12,7 @@ nav{
   padding: 1em 2em;
   display: flex;
   justify-content: space-between;
-  color: #fff;
+  color: #ffd700;
 }
 .topnav { /*-- main navigation element --*/
   margin-top: -.25rem; /*-- uses negative margin to pull menu to top --*/
@@ -46,12 +46,6 @@ a.nav-item:hover {
   display: none; /*-- hides trigram (hamburger menu button) by default --*/
   text-decoration: none; /*-- removes underline --*/
   font-size: 2rem; /*-- makes much larger than normal text--*/
-}
-
-.form, .label {
-  display: flex;
-  justify-content: center;
-  text-align: center;
 }
 
 .gallery {
@@ -305,4 +299,12 @@ footer {
 @media screen and (min-width: 1280px) { /*-- better modal display on largest screens --*/
   .modal-body {grid-template-columns: 7fr 5fr;}
 
+}
+.container > div {
+    display: inline-block;
+    display: -moz-inline-box;
+    *display: inline; /* For IE7 */
+    zoom: 1; /* Trigger hasLayout */
+    width: 20%;
+    text-align: center;
 }
